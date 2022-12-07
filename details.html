@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="details.css" />
+    <title>Budget Calculator</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <form id="contact" action="" method="post">
+          <h3>Aya Budget Calculator</h3>
+          <h4>Please fill your details</h4>
+          <fieldset>
+            <input
+              id="user_Name"
+              placeholder="Your name"
+              type="text"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Age" type="number" tabindex="2" required />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your Gender"
+              type="text"
+              tabindex="3"
+              list="gender"
+              required
+              autofocus
+            />
+            <datalist id="gender">
+              <option value="Male"></option>
+              <option value="Female"></option>
+              <option value="Not applicable"></option>
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your Marital status"
+              type="text"
+              tabindex="4"
+              list="marital_status"
+              required
+              autofocus
+            />
+            <datalist id="marital_status">
+              <option value="Single"></option>
+              <option value="Married"></option>
+              <option value="Divorced"></option>
+              <option value="Not applicable"></option>
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="No. of Dependant"
+              type="number"
+              tabindex="5"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+              onclick="getData()"
+            >
+              <a href="index.html" target="_blank"
+                >Click to enter your Income</a
+              >
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="details.js"></script>
+  </body>
+</html>
